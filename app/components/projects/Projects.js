@@ -83,7 +83,7 @@ const Projects = () => {
         "Interactive Demonstration",
       ],
       links: [
-        "https://react-gravity-simulation.netlify.app/",
+        "https://vercel.com/prem-pachabhaiyas-projects/gravity-simulation",
         "https://github.com/PremPachabhaiyamagar/Gravity_simulation.git",
       ],
     },
