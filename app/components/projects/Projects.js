@@ -83,7 +83,7 @@ const Projects = () => {
         "Interactive Demonstration",
       ],
       links: [
-        "https://vercel.com/prem-pachabhaiyas-projects/gravity-simulation",
+        "https://gravity-simulation-three.vercel.app/",
         "https://github.com/PremPachabhaiyamagar/Gravity_simulation.git",
       ],
     },
