@@ -191,7 +191,7 @@ export const Projects = () => {
         >
           <motion.h2 variants={variants}>LinkedIn-Clone</motion.h2>
           <motion.div variants={variants} className="project-content-wrapper">
-            <ImageGallery items={linked} />;
+            <ImageGallery items={linked} />
             <motion.p variants={variants}>
               LinkedIn is the world's largest professional network on the
               internet. You can use LinkedIn to find the right job or
