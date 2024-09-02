@@ -73,17 +73,6 @@ const Projects = () => {
       ],
     },
     {
-      id: 1,
-      mainImage:
-        "https://res.cloudinary.com/dnwtfserf/image/upload/v1685555853/shopify-banner_cgyibf.png",
-      mainText: "Full Stack E-commerce App",
-      features: ["Responsive Design", "Products Listings", "Payment Gateway"],
-      links: [
-        "https://shopify-frontend-5d0ba.web.app/",
-        "https://shopify-frontend-5d0ba.web.app/",
-      ],
-    },
-    {
       id: 2,
       mainImage:
         "https://res.cloudinary.com/dnwtfserf/image/upload/v1685555836/gravityBanner_vn62dk.png",
