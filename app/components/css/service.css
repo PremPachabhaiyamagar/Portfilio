@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.service-container {
+	width: 80vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	margin-bottom: 20px;
+	font-family: "Quicksand", sans-serif;
+	margin: 100px 0;
+}
+.service-container h1 {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 50px;
+	padding: 30px 0;
+}
+.service-container h1::after {
+	content: "";
+	display: block;
+	border: 3px solid blue;
+	border-radius: 20px;
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.service-container p {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 60px;
+	line-height: 2;
+}
+
+.service-card {
+	margin: 5px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.service-card ul {
+	display: flex;
+	flex-direction: column;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+.service-card ul li {
+	padding: 15px 5px;
+	font-size: 35px;
+}
+.tick {
+	color: green;
+	margin-left: 15px;
+	margin: 15px 10px;
+	display: flex;
+
+	flex-direction: column;
+}
+.tick img {
+	padding: 25px 5px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.service-container {
+		width: 93vw;
+	}
+	.tick img {
+		padding: 30px 5px;
+	}
+	.service-card ul li {
+		padding: 15px 5px;
+		font-size: 25px;
+	}
+	.tick img {
+		padding: 32px 5px;
+	}
+}

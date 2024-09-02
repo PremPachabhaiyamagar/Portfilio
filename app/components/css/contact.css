@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.contact-container {
+	width: 80vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 20px;
+	font-family: "Quicksand", sans-serif;
+}
+.contact {
+	width: 80vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.contact-heading {
+	text-align: center;
+	font-size: 60px;
+	position: relative;
+	padding: 30px 0;
+	margin-top: 3rem;
+}
+.c-p {
+	text-align: center;
+	font-size: 60px;
+}
+.c-p-1 {
+	font-size: 30px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+.contact-heading::after {
+	content: "";
+	display: block;
+	border: 3px solid blue;
+	border-radius: 20px;
+	width: 350px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.contact-card {
+	border: 1px solid black;
+	display: flex;
+	flex-grow: 0.7;
+
+	margin: 5px;
+	overflow: hidden;
+}
+.left {
+	width: 100%;
+	overflow: hidden;
+}
+
+.contact-card p {
+	font-size: 70px;
+}
+.contact-card p1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-form input {
+	width: 70%;
+	height: 40px;
+	margin-top: 5%;
+	border-radius: 8px;
+	color: black;
+
+	font-size: 16px;
+}
+.contact-form input:nth-child(1) {
+	height: 100px;
+}
+.contact-form button {
+	margin-top: 5%;
+	height: 40px;
+	width: 50%;
+	border-radius: 20px;
+	color: black;
+	font-size: 20px;
+}
+.contact-right {
+	flex-grow: 1;
+	width: 100%;
+}
+button {
+	font-family: inherit;
+	font-size: 20px;
+	background: royalblue;
+	color: white;
+	padding: 0.7em 1em;
+	padding-left: 0.9em;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 16px;
+	overflow: hidden;
+
+	transition: all 0.2s;
+}
+
+button span {
+	display: block;
+	margin-left: 0.3em;
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+}
+
+button svg {
+	display: block;
+	transform-origin: center center;
+	transition: transform 0.3s ease-in-out;
+	overflow: hidden;
+}
+
+button:hover .svg-wrapper {
+	animation: fly-1 0.6s ease-in-out infinite alternate;
+	overflow: hidden;
+}
+
+button:hover svg {
+	transform: translateX(1.2em) rotate(45deg) scale(1.1);
+	overflow: hidden;
+	overflow: hidden;
+}
+
+button:hover span {
+	transform: translateX(5em);
+	overflow: hidden;
+}
+
+button:active {
+	transform: scale(0.95);
+	overflow: hidden;
+}
+.emaill {
+	display: flex;
+	justify-content: space-between;
+}
+.email {
+	display: flex;
+	align-items: center;
+}
+.email p {
+	font-size: 20px;
+	margin-left: 10px;
+	color: blue;
+	padding-bottom: 5px;
+}
+.phone {
+	display: flex;
+
+	align-items: center;
+}
+.phone p {
+	font-size: 20px;
+	margin-left: 10px;
+	color: blue;
+}
+.p2 {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 1005px;
+	margin-bottom: 25px;
+	padding: 10px 0;
+
+	margin-top: 40px;
+}
+.loader {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	position: relative;
+
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fly-1 {
+	from {
+		transform: translateY(0.1em);
+	}
+
+	to {
+		transform: translateY(-0.1em);
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.contact-card {
+		display: flex;
+
+		text-align: center;
+	}
+	.contact {
+		width: 93vw;
+	}
+	.contact-container {
+		width: 100vw;
+
+		display: flex;
+		flex-direction: column;
+	}
+	.left {
+		width: 100%;
+	}
+	.contact-card p {
+		font-size: 20px;
+	}
+	.contact-form input {
+		height: 40px;
+		margin-top: 5%;
+		border-radius: 8px;
+		color: black;
+		width: 100%;
+
+		font-size: 16px;
+	}
+	.contact-right {
+		width: 80%;
+	}
+	.c-p {
+		font-size: 40px;
+	}
+	.c-p-1 {
+		text-align: center;
+		font-size: 25px !important;
+
+		padding: 0 !important;
+	}
+	.p2 {
+		margin-top: 40px !important;
+		font-size: 20px;
+	}
+	.phone p {
+		font-size: 15px;
+		margin-left: 10px;
+		color: blue;
+	}
+	.email p {
+		font-size: 15px;
+	}
+}
